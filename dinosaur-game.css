@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding-left: 10px;
+}
+
+h1 {
+  color: rgba(255, 68, 0);
+}
+
+#mainGame {
+  width: 500px;
+  height: 200px;
+  border: none;
+}
+
+.bgImage {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#startBtn, #jumpNow, #resetBtn {
+  border: none;
+  background-color: green;
+  color: white;
+  padding: 5px;
+  height: fit-content;
+  width: fit-content;
+}
+
+#jumpNow {
+  background-color: red;
+  position: relative;
+  z-index: 10;
+}
+
+#resetBtn {
+  background-color: black;
+}
+
+ #character {
+  width: 20px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+  border: none;
+  z-index: 20;
+} 
+
+.dino-image {
+  width: 25px;
+  height: 50px;
+}
+
+.js-character-jump {
+  animation: jump 500ms;
+}
+
+@keyframes jump {
+  0%{top: 150px;}
+  30%{top: 100px;}
+  70%{top: 100px;}
+  100%{top: 150px;}
+}
+
+#block {
+  border: none;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 120px;
+  left: 480px;
+  z-index: 20;
+}
+
+.fire-image {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.js-block-run {
+  animation: blockrun 1.5s infinite linear;
+}
+
+@keyframes blockrun {
+  0%{left: 480px;}
+  100%{left: -50px;}
+}
+
+#score {
+  margin-top: 5px;
+  margin-left: 200px;
+  font-size: x-large;
+  font-weight: bolder;
+}
